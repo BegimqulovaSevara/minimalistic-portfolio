@@ -11,12 +11,25 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quos temporibus vero aliquam eaque fugit rem. Similique obcaecati provident nemo.</h1>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, et illum ex eum consequatur reiciendis omnis hic, est sit ratione cum quasi optio ipsam iure voluptatum repellendus ab qui? Autem alias, adipisci dolorem sunt, quam ipsum et, eveniet magni molestias ad illo neque aliquam voluptates quisquam temporibus asperiores corporis aperiam?
-        </p>
-    </div>
+    <!-- SITE-HEADER CONTENT -->
+    <header class="header">
+        <div class="header__container container">
+            <a class="header__logo logo" href="./index.html">
+                <img class="logo__img" src="./images/logo-dark.svg" alt="Site-logo" width="61" height="32">
+            </a>
+            
+            <!-- SITENAV -->
+            <nav class="header__sitenav sitenav sitenav--header">
+                <ul class="sitenav__list">
+                    <li class="sitenav__item sitenav__item--active"><a href="#" class="sitenav__link">HOME</a></li>
+                    <li class="sitenav__item"><a href="#" class="sitenav__link">PORTFOLIO</a></li>
+                    <li class="sitenav__item"><a href="#" class="sitenav__link">CONTACT ME</a></li>
+                </ul>
+            </nav>
+            
+            <button class="header__toggler" type="button" aria-label="Menu"></button>
+        </div>
+    </header>
 
     <script src="./js/main.js"></script>
 </body>
