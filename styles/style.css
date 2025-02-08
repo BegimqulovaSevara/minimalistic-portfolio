@@ -264,6 +264,9 @@ ul{
 }
 
 /* HERO SECTION */
+.hero{
+  margin-bottom: 96px;
+}
 .hero__img {
   width: 100%;
   margin-bottom: 24px;
@@ -273,9 +276,55 @@ ul{
   font-family: var(--accent-font-family);
   font-size: 40px;
   line-height: 42px;
+  color: var(--grey-blue);
   margin-bottom: 32px;
 }
 
+/* ABOUT-ME SECTION */
+.about-me {
+  margin-bottom: 115px;
+}
+.about-me__img {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.about-me__heading {
+  margin-bottom: 28px;
+  font-family: var(--accent-font-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  color: var(--grey-blue);
+}
+.about-me__info {
+  margin-bottom: 24px;
+  color: var(--grey-blue);
+  opacity: 0.8;
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+.about-me__link{
+  display: inline-block;
+  padding: 17px 36px;
+  margin-bottom: 51px;
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.1px;
+  text-transform: uppercase;
+  color: var(--grey-blue);
+  border: 1px solid var(--grey-blue);
+}
+.about-me__hroll{
+  height: 1px;
+  color: var(--grey-blue);
+  opacity: 0.15;
+}
+.hroll-top{
+  margin-bottom: 32px;
+}
 /* FOOTER CONTENT */
 .footer {
   padding-top: 56px;
@@ -319,9 +368,6 @@ only screen and (                min-resolution: 2dppx) {
 
 /* Responsive */
 @media only screen and (min-width: 700px){
-  .hero{
-    margin-bottom: 96px;
-  }
   .hero__container{
     position: relative;
     box-sizing: border-box;
@@ -340,6 +386,26 @@ only screen and (                min-resolution: 2dppx) {
   }
   .hero__heading{
     margin-bottom: 48px;
+  }
+  .about-me{
+    margin-bottom: 96px;
+  }
+  .about-me__container{
+    display: flex;
+  }
+  .about-me__img{
+    width: 78%;
+    height: 100%;
+    margin-right: 69px;
+    margin-bottom: 0;
+    object-fit: cover;
+    object-position: right;
+  }
+  .about-me__info-wrapper{
+    max-width: 339px;
+  }
+  .about-me__link{
+    margin-bottom: 46px;
   }
   .footer{
     padding-top: 24px;
@@ -409,6 +475,9 @@ only screen and (                min-resolution: 2dppx) {
   .header{
     padding-bottom: 54px;
   }
+  .hero{
+    margin-bottom: 150px;
+  }
   .hero__info-wrapper{
     max-width: 445px;
   }
@@ -416,5 +485,20 @@ only screen and (                min-resolution: 2dppx) {
     font-size: 50px;
     line-height: 50px;
     margin-bottom: 53px;
+  }
+  .about-me{
+    margin-bottom: 150px;
+  }
+  .about-me__img{
+    width: 100%;
+    max-width: 540px;
+    height: 100%;
+    max-height: 600px;
+    margin-right: 125px;
+    margin-bottom: 0;
+  }
+  .about-me__info-wrapper{
+    height: 100%;
+    max-width: 350px;
   }
 }
